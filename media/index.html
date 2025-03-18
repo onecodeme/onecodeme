@@ -9,21 +9,23 @@
                 margin: auto;
                 display: flex;
                 justify-content: center;
+                width: 60%;
             }
 
             .card {
-                background-color: aqua;
+                background-color: rgba(0, 0, 0, 0.435);
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 transition: 0.3s;
                 width: 20%;
                 margin: auto;
+                margin-bottom: 30px;
                 padding: 10px;
                 border-radius: 10px;
-                white-space: 10px;
             }
 
             .card:hover {
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.415);
+                transform: scale(1.05);
             }
 
             .card img {
@@ -36,21 +38,19 @@
 
             .container h4{
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 20px;
+                font-size: 30px;
                 margin-top: 5px;
                 margin-bottom: 5px;
+                color: white;
             }
-
             .shapka{
                 display: flex;
-                justify-items: center;
                 background-color: rgba(0, 0, 0, 0.398);
                 margin: auto;
                 margin-top: 30px;
                 margin-bottom: 30px;
-                width: 800px;
+                width: 950px;
                 border-radius: 20px;
-                padding: 20px;
             }
             .shapka div{
                 justify-items: center;
@@ -58,10 +58,7 @@
                 margin: auto;
                 padding: 20px;
                 border-radius: 20px;
-            }
-            .shapka #select{
-                border-style: dotted;
-                border-color: white;
+                width: 232.207px;
             }
             .shapka h1{
                 margin: auto;
@@ -72,12 +69,17 @@
                 font-size: 40px;
                 font-family: "Comic Sans MS", cursive, sans-serif;
             }
-            .shapka #selectext{
+            .select h1{
                 text-transform: uppercase;
             }
             .shapka a{
                 text-decoration: none;
                 padding: 20px;
+                margin: auto;
+                transition: 0.3s;
+            }
+            .shapka a:hover{
+                transform: scale(1.05);
             }
             body{
                 background-image: url(https://avatars.mds.yandex.net/i?id=5c45e69548308f04def01ec43bdc110b_l-5287379-images-thumbs&n=13);
@@ -92,37 +94,63 @@
                 <h1 >Обо мне</h1>
             </div> 
             </a>  
-            <div id="select">
-                <h1 id="selectext">Медиатека</h1>
+            <a href=".">
+            <div class="select">
+                <h1>Медиатека</h1>
             </div>
+            </a>
             <a href="game">
             <div>
                 <h1>Игры</h1>
             </div>
             </a>
         </div>
-        <div class="div">
+        <a class="div">
             <div class="card" style="margin-right: 0;">
-                <img src="Strykalo.png" style="width:100%; border-radius: 10px;">
+                <img src="Strykalo.png">
                 <div class="container">
                   <h4><b>Валентин Стрыкало - Улица сталеваров</b></h4>
                   <audio src="uls.mp3" controls>
                 </div>
             </div>
             <div class="card">
-                <img src="pic.jpeg" style="width:100%; border-radius: 10px;">
+                <img src="pic.jpeg">
                 <div class="container">
                   <h4><b>Людмил Огурченко - Людмил Огурченко</b></h4>
                   <audio src="lud.mp3" controls>
                 </div>
             </div>
             <div class="card" style="margin-left: 0;">
-                <img src="serega.jpeg" style="width:100%; border-radius: 10px;">
+                <img src="serega.jpeg">
                 <div class="container">
                   <h4><b>Серега Пират - В этой траве</b></h4>
                   <audio src="bt.mp3" controls>
                 </div>
             </div>
-        </div>
+        </a>
+        <br>
+        <a class="div">
+            <div class="card" style="margin-right: 0;">
+                <img src="chast.jpg">
+                <div class="container">
+                  <h4><b>Валентин Стрыкало - Все мои друзья</b></h4>
+                  <audio src="vmd.mp3" controls>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 0px;">
+                <img src="taks.jpg">
+                <div class="container">
+                  <h4><b> Кузьма - Таксист</b></h4>
+                  <audio src="kuzma.mp3" controls>
+                </div>
+            </div>
+            <div class="card" style="margin-left: 0; margin-top: 0px;">
+                <img src="privet.png">
+                <div class="container">
+                  <h4><b>mzlff - Привет!</b></h4>
+                  <audio src="privet.mp3" controls>
+                </div>
+            </div>
+        </a>
     </body>
 </html>

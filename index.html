@@ -3,14 +3,14 @@
     <head>
         <title>Обо мне</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             .div{
-                display: flex;
-                justify-content: center;
                 background-color: rgba(0, 0, 0, 0.398);
                 width: 1100px;
                 margin: auto;
                 border-radius: 20px;
+                padding: 20px;
             }
             .div p{
                 color: rgb(216, 216, 216);
@@ -21,14 +21,12 @@
             }
             .shapka{
                 display: flex;
-                justify-items: center;
                 background-color: rgba(0, 0, 0, 0.398);
                 margin: auto;
                 margin-top: 30px;
                 margin-bottom: 30px;
-                width: 800px;
+                width: 950px;
                 border-radius: 20px;
-                padding: 20px;
             }
             .shapka div{
                 justify-items: center;
@@ -36,11 +34,9 @@
                 margin: auto;
                 padding: 20px;
                 border-radius: 20px;
+                width: 232.207px;
             }
-            .shapka #select{
-                border-style: dotted;
-                border-color: white;
-            }
+
             .shapka h1{
                 margin: auto;
                 margin-left: 10px;
@@ -50,12 +46,17 @@
                 font-size: 40px;
                 font-family: "Comic Sans MS", cursive, sans-serif;
             }
-            .shapka #selectext{
+            .select h1{
                 text-transform: uppercase;
             }
             .shapka a{
                 text-decoration: none;
                 padding: 20px;
+                margin: auto;
+                transition: 0.3s;
+            }
+            .shapka a:hover{
+                transform: scale(1.05);
             }
             body{
                 background-image: url(https://avatars.mds.yandex.net/i?id=5c45e69548308f04def01ec43bdc110b_l-5287379-images-thumbs&n=13);
@@ -65,13 +66,16 @@
     </head>
     <body>
         <div class="shapka">
-            <div id="select">
-                <h1 id="selectext">Обо мне</h1>
+            <a href =".">
+            <div class="select">
+                <h1 >Обо мне</h1>
             </div> 
-            <a href="media">   
+            </a>
+            <a href="media/">
             <div>
-                    <h1>Медиатека</h1>
+                <h1>Медиатека</h1>
             </div>
+            </a>
             </a>
             <a href="game">
             <div>
